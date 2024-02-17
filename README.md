@@ -20,28 +20,27 @@ This project provides a Docker container setup for running a Debian-based system
 
 Clone the repository and navigate into the project directory:
 
-\```bash
-git clone <repository-url>
+\```$ git clone <repository-url>
 cd <project-directory>
 \```
 
 Build the Docker image:
 
-\```bash
-docker build -t debian-tightvnc .
+\```
+$ docker build -t debian-tightvnc .
 \```
 
 ### Running the Container
 
 To start the container in detached mode and expose the VNC server on port 5901:
 
-\```bash
-docker run -d -p 5901:5901 debian-tightvnc
+\```
+$ docker run -d -p 5901:5901 debian-tightvnc
 \```
 
 ### Connecting via VNC
 
-Open your VNC client and connect to `localhost:5901`. When prompted for a password, enter the password you configured in the Dockerfile (default is `your_password`).
+Open your VNC client and connect to `localhost:5901`. When prompted for a password, enter the password you configured in the Dockerfile (default is `useruseruser`).
 
 ## Customization
 
